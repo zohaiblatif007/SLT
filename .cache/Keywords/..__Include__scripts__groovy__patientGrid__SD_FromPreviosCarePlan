@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "B67AA6160E3FD1301EBEFDC56CBAC957",
+  "keywordClasses": [
+    {
+      "name": "patientGrid.SD_FromPreviosCarePlan",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

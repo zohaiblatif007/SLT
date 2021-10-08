@@ -1,3 +1,103 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientToClinicalTab/Obj_PrimryProgram",
+      "brokenLocator": "//button[@class\u003d\u0027dropbtn btn btn-primary program-menu-btn\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button[@id\u003d\u0027btn_create_patient\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientToClinicalTab/Obj_PrimryProgram_attributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_LandingPage/OR_CMR/Obj_CMR",
+      "brokenLocator": "//a[@id\u003d\u0027tabSelectorAppCCM\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Toggle navigation\u0027])[1]/following::a[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_LandingPage/OR_CMR/Obj_CMR_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Funtionalstatus/Obj_inputcode",
+      "brokenLocator": "//td[@data-container-for\u003d\u0027code\u0027]//input[@class\u003d\u0027k-input k-textbox\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//td[2]/span/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Funtionalstatus/Obj_inputcode_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Procedure_Order/Obj_li_Outside state",
+      "brokenLocator": "//li[text()\u003d\u0027Outside state ambulance serv::A0021\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027CDT\u0027])[1]/following::li[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Procedure_Order/Obj_li_Outside state_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/span_select - Copy (1)",
+      "brokenLocator": "(//span[@class\u003d\u0027k-widget k-dropdown k-header form-control required-field\u0027])[3]//span[@class\u003d\u0027k-icon k-i-arrow-s\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Latif, Zohaib\u0027])[4]/following::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/span_select - Copy (1)_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Lab_Order/input",
+      "brokenLocator": "(//input[@type\u003d\u0027checkbox\u0027])[4081]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[9]/div[2]/div[2]/label/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Lab_Order/input_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_li_Edema",
+      "brokenLocator": "//li[contains(text(),\u0027Edema of lower extremity\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*[(text() \u003d \u0027Edema of lower extremity (finding)::102572006\u0027 or . \u003d \u0027Edema of lower extremity (finding)::102572006\u0027)]",
+      "proposedLocatorMethod": "BASIC",
+      "recoveryMethod": "BASIC",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_li_Edema_BASIC.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/AddPatient/Obj_AlertnewPatientsaved",
+      "brokenLocator": "//div[contains(text(), \"Patient Saved Successfully\")]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "div.k-notification-wrap",
+      "proposedLocatorMethod": "CSS",
+      "recoveryMethod": "CSS",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/AddPatient/Obj_AlertnewPatientsaved_CSS.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_Alert/Obj_Hide",
+      "brokenLocator": "//*/text()[normalize-space(.)\u003d\u0027Hide\u0027]/parent::*",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u0027Hide\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_Alert/Obj_Hide_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "assessmentcheckbox",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//label[text()\u003d\"Asthma\"]//input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/assessmentcheckbox_XPATH.png"
+    }
+  ]
 }

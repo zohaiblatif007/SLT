@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "EE0585B746BBD52BAD83E245444EEDD0",
+  "keywordClasses": [
+    {
+      "name": "patientGrid.PatientFilters",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

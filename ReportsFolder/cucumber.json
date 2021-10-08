@@ -1,0 +1,108 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22472913000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7324470400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Add Recommended Billable Assessment with all fields",
+        "description": "",
+        "id": "add-all-types-of-assessments;add-recommended-billable-assessment-with-all-fields;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22204185500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I search Danial722, Hack722 using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Danial722, Hack722",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1004942400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PatientSearch"
+          },
+          {
+            "name": "@Patientsearch"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Add All types of Assessments",
+    "description": "",
+    "id": "add-all-types-of-assessments",
+    "keyword": "Feature",
+    "uri": "Include/features/PatientGrid/PatientSearch.feature",
+    "tags": [
+      {
+        "name": "@PatientSearch",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

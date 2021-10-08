@@ -1,0 +1,2350 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22194351901,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16620376801,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Add Recommended Billable Assessment with all fields",
+        "description": "",
+        "id": "add-all-types-of-assessments;add-recommended-billable-assessment-with-all-fields;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42305218399,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I search Danial722, Hack722 using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Danial722, Hack722",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1005386701,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8671944499,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6150405401,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on Assessment Add button",
+            "match": {
+              "location": "Assessment.Assementadd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6107383300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on Recommended Assessment tab to add assessment",
+            "match": {
+              "location": "Assessment.recommendedassessment()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6389493100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see Cancel, Save \u0026 Close and Save buttons available and functional",
+            "match": {
+              "location": "Assessment.buttonsvalidations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5924817699,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see the Questionaire is loaded against relevant assessment",
+            "match": {
+              "location": "Assessment.questionaire()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 11113350900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see question removing cross sign available and functional",
+            "match": {
+              "location": "Assessment.Questionremovesign()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3787137400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter HTN-1 in assessment title field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTN-1",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.Title(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3832015599,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter 893 in assessment CPTCode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "893",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.CPTCode(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3896292299,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter chronic disease in assessment comment field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chronic disease",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.comment(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3746200700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter answer Yes to question 1 in RecommendedAssessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion1rec(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3762323600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter answer Most of the time to question 2 in RecommendedAssessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Most of the time",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion2rec(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3721938399,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I enter answer All of the time to question 3 in RecommendedAssessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "All of the time",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion3rec(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3728276701,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter answer No to question 4 in RecommendedAssessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion4rec(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3795353999,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I enter answer Yes to question 5 in RecommendedAssessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion5rec(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2180793899,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on Save button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveand()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6564574701,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2105538100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on Save and Close button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveandclose()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6665167399,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6401174100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should see Edit button available and functional",
+            "match": {
+              "location": "Assessment.editbuttonassessmentverify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4383553301,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should see the newly added HTN-1 and Yes and 893 for assessment on grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTN-1",
+                  "offset": 29
+                },
+                {
+                  "val": "Yes",
+                  "offset": 39
+                },
+                {
+                  "val": "893",
+                  "offset": 47
+                }
+              ],
+              "location": "Assessment.Addassessmentverify(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5920824500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I should see HTN-1 and current system Date and No of Q Ans and Yes and Most of the time and All of the time and No and Yes and chronic disease for assessment in the right pan",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTN-1",
+                  "offset": 13
+                },
+                {
+                  "val": "Yes",
+                  "offset": 63
+                },
+                {
+                  "val": "Most of the time",
+                  "offset": 71
+                },
+                {
+                  "val": "All of the time",
+                  "offset": 92
+                },
+                {
+                  "val": "No",
+                  "offset": 112
+                },
+                {
+                  "val": "Yes",
+                  "offset": 119
+                },
+                {
+                  "val": "chronic disease",
+                  "offset": 127
+                }
+              ],
+              "location": "Assessment.Addassessmentverifyrightpan(String,String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@AddRecommendedAssessment"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22365456599,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13961611200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 60,
+        "name": "Test Cancel button feature in Recommended Assessment",
+        "description": "",
+        "id": "add-all-types-of-assessments;test-cancel-button-feature-in-recommended-assessment;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42317306400,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I search Danial722, Hack722 using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Danial722, Hack722",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1014187700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8626647001,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6062919301,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I click on Assessment Add button",
+            "match": {
+              "location": "Assessment.Assementadd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6129040201,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I click on Recommended Assessment tab to add assessment",
+            "match": {
+              "location": "Assessment.recommendedassessment()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6315591099,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I should see Cancel, Save \u0026 Close and Save buttons available and functional",
+            "match": {
+              "location": "Assessment.buttonsvalidations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5955792300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I should see the Questionaire is loaded against relevant assessment",
+            "match": {
+              "location": "Assessment.questionaire()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 11093591601,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I should see question removing cross sign available and functional",
+            "match": {
+              "location": "Assessment.Questionremovesign()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3874996800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I enter HTN-1 in assessment title field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTN-1",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.Title(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3799819400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I enter 893 in assessment CPTCode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "893",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.CPTCode(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3859198899,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I enter chronic desease in assessment comment field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chronic desease",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.comment(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5104701699,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I click on Cancel button to cancel the saved assessment",
+            "match": {
+              "location": "Assessment.Obj_buttoncancel()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3440487700,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I should not see the canceled assessment present on the grid",
+            "match": {
+              "location": "Assessment.cancelassessmentverify()"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@CancelbuttonofAssessment"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22256878800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14508117600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 96,
+        "name": "Add Billable Assessment with Other Assessment Templates",
+        "description": "",
+        "id": "add-all-types-of-assessments;add-billable-assessment-with-other-assessment-templates;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42287578300,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I search Blake, Arnold using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blake, Arnold",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1007805400,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8484800100,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6178203500,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I click on Assessment Add button",
+            "match": {
+              "location": "Assessment.Assementadd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6161666600,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I click on Other Assessment Templates tab to add Assessment",
+            "match": {
+              "location": "Assessment.otherassementTemplate()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7582151299,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I select check box of Asthma Billable Assessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma",
+                  "offset": 22
+                }
+              ],
+              "location": "Assessment.assementcheckbox(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5072237200,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I click on Proceed button to save assessment template",
+            "match": {
+              "location": "Assessment.proceedbutton()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6406893800,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I should see Cancel, Save \u0026 Close and Save buttons available and functional",
+            "match": {
+              "location": "Assessment.buttonsvalidations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5950164200,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I should see the Questionaire is loaded against relevant assessment",
+            "match": {
+              "location": "Assessment.questionaire()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 11026556700,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I should see question removing cross sign available and functional",
+            "match": {
+              "location": "Assessment.Questionremovesign()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3770643900,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I enter Asthma Assessment-2 in assessment title field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma Assessment-2",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.Title(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3694800801,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I enter 689 in assessment CPTCode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "689",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.CPTCode(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3855269200,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I enter Asthma assessment in assessment comment field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma assessment",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.comment(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3711881600,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "I enter answer Yes to question 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion1(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3789710601,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I enter answer Yes to question 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion2(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3693007700,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I enter answer Yes to question 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion3(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3716169500,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I enter answer No to question 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion4(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3813654299,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I enter answer Yes to question 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion5(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2054342201,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I click on Save button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveand()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6756089001,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2058681101,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I click on Save and Close button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveandclose()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6505395200,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6454824100,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I should see Edit button available and functional",
+            "match": {
+              "location": "Assessment.editbuttonassessmentverify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4454194900,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I should see the newly added Asthma Assessment-2 and Yes and 689 for assessment on grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma Assessment-2",
+                  "offset": 29
+                },
+                {
+                  "val": "Yes",
+                  "offset": 53
+                },
+                {
+                  "val": "689",
+                  "offset": 61
+                }
+              ],
+              "location": "Assessment.Addassessmentverify(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5698269300,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I should see Asthma Assessment-2 and current system Date and No of Q Ans and Yes and Yes and Yes and No and Yes and Asthma assessment for assessment in the right pan",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma Assessment-2",
+                  "offset": 13
+                },
+                {
+                  "val": "Yes",
+                  "offset": 77
+                },
+                {
+                  "val": "Yes",
+                  "offset": 85
+                },
+                {
+                  "val": "Yes",
+                  "offset": 93
+                },
+                {
+                  "val": "No",
+                  "offset": 101
+                },
+                {
+                  "val": "Yes",
+                  "offset": 108
+                },
+                {
+                  "val": "Asthma assessment",
+                  "offset": 116
+                }
+              ],
+              "location": "Assessment.Addassessmentverifyrightpan(String,String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@AddOtherAssessmentBillable"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22331333700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13301390201,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 131,
+        "name": "Add Non Billable Assessment with Other Assessment Templates",
+        "description": "",
+        "id": "add-all-types-of-assessments;add-non-billable-assessment-with-other-assessment-templates;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42167514200,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I search Blake, Arnold using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blake, Arnold",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1003726800,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8631143000,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6177539900,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I click on Assessment Add button",
+            "match": {
+              "location": "Assessment.Assementadd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6243142000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I click on Other Assessment Templates tab to add Assessment",
+            "match": {
+              "location": "Assessment.otherassementTemplate()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7566449300,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "I select check box of Asthma Billable Assessment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma",
+                  "offset": 22
+                }
+              ],
+              "location": "Assessment.assementcheckbox(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5115424500,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I click on Proceed button to save assessment template",
+            "match": {
+              "location": "Assessment.proceedbutton()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6468877800,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I should see Cancel, Save \u0026 Close and Save buttons available and functional",
+            "match": {
+              "location": "Assessment.buttonsvalidations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5902941101,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I should see the Questionaire is loaded against relevant assessment",
+            "match": {
+              "location": "Assessment.questionaire()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10916635001,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I should see question removing cross sign available and functional",
+            "match": {
+              "location": "Assessment.Questionremovesign()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3180810100,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "I enter type of assessment as non billable",
+            "match": {
+              "location": "Assessment.BillableTypeno()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3781989199,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "I enter Asthma Assessment-nonbillable in assessment title field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma Assessment-nonbillable",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.Title(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3669325601,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "I enter Asthma assessment in assessment comment field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma assessment",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.comment(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3730577899,
+              "status": "passed"
+            },
+            "line": 116,
+            "name": "I enter answer Yes to question 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion1(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3673447400,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "I enter answer Yes to question 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion2(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3659427800,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "I enter answer Yes to question 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion3(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3723874900,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "I enter answer No to question 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion4(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3678520301,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "I enter answer Yes to question 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 15
+                }
+              ],
+              "location": "Assessment.Ansquestion5(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2159874100,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "I click on Save button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveand()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6014534000,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2216284700,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "I click on Save and Close button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveandclose()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6743685400,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6417287900,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "I should see Edit button available and functional",
+            "match": {
+              "location": "Assessment.editbuttonassessmentverify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4445896199,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "I should see the newly added Asthma Assessment-nonbillable and No and  for assessment on grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma Assessment-nonbillable",
+                  "offset": 29
+                },
+                {
+                  "val": "No",
+                  "offset": 63
+                },
+                {
+                  "val": "",
+                  "offset": 70
+                }
+              ],
+              "location": "Assessment.Addassessmentverify(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5838064201,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "I should see Asthma Assessment-nonbillable and current system Date and No of Q Ans and Yes and Yes and Yes and No and Yes and Asthma assessment for assessment in the right pan",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Asthma Assessment-nonbillable",
+                  "offset": 13
+                },
+                {
+                  "val": "Yes",
+                  "offset": 87
+                },
+                {
+                  "val": "Yes",
+                  "offset": 95
+                },
+                {
+                  "val": "Yes",
+                  "offset": 103
+                },
+                {
+                  "val": "No",
+                  "offset": 111
+                },
+                {
+                  "val": "Yes",
+                  "offset": 118
+                },
+                {
+                  "val": "Asthma assessment",
+                  "offset": 126
+                }
+              ],
+              "location": "Assessment.Addassessmentverifyrightpan(String,String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@AddOtherAssessmentNonBillable"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22168851600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13082889401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 163,
+        "name": "Add in Custom Assessment with all fields",
+        "description": "",
+        "id": "add-all-types-of-assessments;add-in-custom-assessment-with-all-fields;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42175143200,
+              "status": "passed"
+            },
+            "line": 144,
+            "name": "I search Blake, Arnold using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blake, Arnold",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8632418100,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6151737200,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "I click on Assessment Add button",
+            "match": {
+              "location": "Assessment.Assementadd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6167409300,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "I click on Custom Assessment tab to add Assessment",
+            "match": {
+              "location": "Assessment.customassessment()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6376616400,
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "I should see Cancel, Save \u0026 Close and Save buttons available and functional",
+            "match": {
+              "location": "Assessment.buttonsvalidations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3811602899,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "I enter Covid Assessment in assessment title field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Covid Assessment",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.Title(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3102426700,
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "I enter Yes in assessment billable type field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.BillableType(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3761717401,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "I enter 789 in assessment CPTCode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "789",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.CPTCode(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4091453201,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "I enter DO KIDS NEED A COVID-19 VACCINE? Yes CAN ANTIBODY TESTS SHOW IF A COVID-19 VACCINE IS WORKING? Yes IF I’VE HAD COVID-19, DO I REALLY NEED THE VACCINE? No DO WE NEED BOOSTER DOSES? Yes DO COVID-19 VACCINES AFFECT FERTILITY OR PERIODS? Yes in assessment comment field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DO KIDS NEED A COVID-19 VACCINE? Yes CAN ANTIBODY TESTS SHOW IF A COVID-19 VACCINE IS WORKING? Yes IF I’VE HAD COVID-19, DO I REALLY NEED THE VACCINE? No DO WE NEED BOOSTER DOSES? Yes DO COVID-19 VACCINES AFFECT FERTILITY OR PERIODS? Yes",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.comment(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2084685100,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "I click on Save button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveand()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6895316900,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2085286901,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "I click on Save and Close button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveandclose()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6504590100,
+              "status": "passed"
+            },
+            "line": 156,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6441233500,
+              "status": "passed"
+            },
+            "line": 157,
+            "name": "I should see Edit button available and functional",
+            "match": {
+              "location": "Assessment.editbuttonassessmentverify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4408886501,
+              "status": "passed"
+            },
+            "line": 158,
+            "name": "I should see the newly added Covid Assessment and Yes and 789 for assessment on grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Covid Assessment",
+                  "offset": 29
+                },
+                {
+                  "val": "Yes",
+                  "offset": 50
+                },
+                {
+                  "val": "789",
+                  "offset": 58
+                }
+              ],
+              "location": "Assessment.Addassessmentverify(String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@AddCustomAssessment"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 29802717400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11862794299,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 189,
+        "name": "Add Custom Assessment with all fields",
+        "description": "",
+        "id": "add-all-types-of-assessments;add-custom-assessment-with-all-fields;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42093856000,
+              "status": "passed"
+            },
+            "line": 171,
+            "name": "I search Blake, Arnold using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blake, Arnold",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1006441001,
+              "status": "passed"
+            },
+            "line": 172,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8516728099,
+              "status": "passed"
+            },
+            "line": 173,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6148222200,
+              "status": "passed"
+            },
+            "line": 174,
+            "name": "I click on Assessment Add button",
+            "match": {
+              "location": "Assessment.Assementadd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6112523400,
+              "status": "passed"
+            },
+            "line": 175,
+            "name": "I click on Based on Previous Assessment tab to add Assessment",
+            "match": {
+              "location": "Assessment.basedonpreviousssessment()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6402304599,
+              "status": "passed"
+            },
+            "line": 176,
+            "name": "I should see Cancel, Save \u0026 Close and Save buttons available and functional",
+            "match": {
+              "location": "Assessment.buttonsvalidations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3866151000,
+              "status": "passed"
+            },
+            "line": 177,
+            "name": "I enter Covid Assessment-3 in assessment title field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Covid Assessment-3",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.Title(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3735530401,
+              "status": "passed"
+            },
+            "line": 178,
+            "name": "I enter 758 in assessment CPTCode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "758",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.CPTCode(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3849375800,
+              "status": "passed"
+            },
+            "line": 179,
+            "name": "I enter Take Steam dailly in assessment comment field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Take Steam dailly",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.comment(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2021712799,
+              "status": "passed"
+            },
+            "line": 180,
+            "name": "I click on Save button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveand()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6445265800,
+              "status": "passed"
+            },
+            "line": 181,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2112931801,
+              "status": "passed"
+            },
+            "line": 182,
+            "name": "I click on Save and Close button to save assessment",
+            "match": {
+              "location": "Assessment.Obj_buttonsaveandclose()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6366109801,
+              "status": "passed"
+            },
+            "line": 183,
+            "name": "I should see success message for added assessment",
+            "match": {
+              "location": "Assessment.addadalert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6417967200,
+              "status": "passed"
+            },
+            "line": 184,
+            "name": "I should see Edit button available and functional",
+            "match": {
+              "location": "Assessment.editbuttonassessmentverify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4436928300,
+              "status": "passed"
+            },
+            "line": 185,
+            "name": "I should see the newly added Covid Assessment-3 and Yes and 758 for assessment on grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Covid Assessment-3",
+                  "offset": 29
+                },
+                {
+                  "val": "Yes",
+                  "offset": 52
+                },
+                {
+                  "val": "758",
+                  "offset": 60
+                }
+              ],
+              "location": "Assessment.Addassessmentverify(String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@AddBasedonPreviousmAssessment"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23633246099,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 22892594600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 210,
+        "name": "Compare two Assessments",
+        "description": "",
+        "id": "add-all-types-of-assessments;compare-two-assessments;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42158859900,
+              "status": "passed"
+            },
+            "line": 196,
+            "name": "I search Blake, Arnold using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blake, Arnold",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1015208200,
+              "status": "passed"
+            },
+            "line": 197,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8679860401,
+              "status": "passed"
+            },
+            "line": 198,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7228199599,
+              "status": "passed"
+            },
+            "line": 199,
+            "name": "I click on Assessment Compare button",
+            "match": {
+              "location": "Assessment.comparesssessment()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7144200601,
+              "status": "passed"
+            },
+            "line": 200,
+            "name": "I click on assessment to compare with other assessment",
+            "match": {
+              "location": "Assessment.comparewithsssessment()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5000383800,
+              "status": "passed"
+            },
+            "line": 201,
+            "name": "I should see the name of assessment1",
+            "match": {
+              "location": "Assessment.assessment1nameverify()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2918404200,
+              "status": "passed"
+            },
+            "line": 202,
+            "name": "I should see the date at which assessment1 is created",
+            "match": {
+              "location": "Assessment.assessment1dateverify()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2971622200,
+              "status": "passed"
+            },
+            "line": 203,
+            "name": "I should see the name of assessment2",
+            "match": {
+              "location": "Assessment.assessment2nameverify()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2979834400,
+              "status": "passed"
+            },
+            "line": 204,
+            "name": "I should see the date at which assessment2 is created",
+            "match": {
+              "location": "Assessment.assessment2dateverify()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2016181099,
+              "status": "passed"
+            },
+            "line": 205,
+            "name": "I should see stop compare button of assessment",
+            "match": {
+              "location": "Assessment.assessmentstopcomprebtunverify()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1022281501,
+              "status": "passed"
+            },
+            "line": 206,
+            "name": "I click on stop compare button of assessment",
+            "match": {
+              "location": "Assessment.assessmentcomparecross()"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@CompareAssessment"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Add All types of Assessments",
+    "description": "",
+    "id": "add-all-types-of-assessments",
+    "keyword": "Feature",
+    "uri": "Include/features/PatientGrid/Assessment/Assessment.feature",
+    "tags": [
+      {
+        "name": "@Assessment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
