@@ -34,7 +34,7 @@ Background:
       * I enter <MRN> in text filed1
       * I click on filter button to filter record
    Then I should see the filtered patient for <MRN> on basis of mrn
-    And I click on MRN coloumn dropdown
+    And I click on MRN coloumn dropdown in care coordination
       * I click on filter option for mrn
       * I click on filter clear button
      

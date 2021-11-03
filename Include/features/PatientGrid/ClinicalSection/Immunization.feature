@@ -16,13 +16,13 @@ Feature: Add Edit and Delete in Immunizations
 		And I enter <Source> in immunizations source field
 		*   I enter <Vaccine> in immunizations vaccine field	
     *   I enter <Date> in immunizations date field
-    *   I enter <Status> in immunizations status field	
+    #*   I enter <Status> in immunizations status field	
     *   I enter <Lot_Number> in immunizations lot number field	
     *   I enter <Manufacture_Name> in immunizations manufacture name field	
     *   I enter <Comment> in immunizations comment field	
     *   I click on immunnizations Update button
-	 Then I should see success message for <module> record
-		And I should see added record <Source> and <Vaccine> and <Date> and <Status> and <Lot_Number> and <Manufacture_Name> and <Comment> for immunnizations on grid
+	 Then I should see message of success for <module> record
+#		And I should see added record <Source> and <Vaccine> and <Date> and <Status> and <Lot_Number> and <Manufacture_Name> and <Comment> for immunnizations on grid
 			
 Examples:
      |    Patient   |Source|           Vaccine             |  Date  | Status  |Lot_Number|Manufacture_Name|              Comment             |module|
@@ -45,7 +45,7 @@ Examples:
     *   I enter <Manufacture_Name> in immunizations manufacture name field	
     *   I enter <Comment> in immunizations comment field	
     *   I click on immunnizations Update button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #	  And I should see added record <Source> and <Vaccine> and <Date> and <Status> and <Lot_Number> and <Manufacture_Name> and <Comment> for immunnizations on grid
 			
 Examples:

@@ -23,7 +23,7 @@ Background:
     *   I enter <Body_Site> in procedure order body site field
     *   I enter <Comments> in procedure order comments field
     *   I click on procedure order Save button
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 		And I should see the newly added <Order_Provider> and <Date> and <Prcedurevaidation1validation> and <Prcedurevaidation2validation> and <Prcedurevaidation3validation> procedure order on grid
 		
     Examples:
@@ -50,7 +50,7 @@ Background:
     *   I enter <Body_Site> in procedure order body site field
     *   I enter <Comments> in procedure order comments field
     *   I click on procedure order Save button
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #		And I should see the newly added <Order_Provider> and <Date> and <Prcedurevaidation1validation> and <Prcedurevaidation2validation> and <Prcedurevaidation3validation> procedure order on grid
 		
 		
@@ -67,7 +67,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Procedure Order	tab
 	 	*   I enter <Order_Provider> to delete record in procedure order
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #	  And I should see the deleted procedure order not present on grid
 		
     Examples:

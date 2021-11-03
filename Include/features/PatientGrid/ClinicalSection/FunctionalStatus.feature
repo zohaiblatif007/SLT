@@ -16,8 +16,8 @@ Background:
 		And I enter <Condition> in functional status condition field
 		*   I enter <Date> in functional status date field
 		*   I click on functional status Update button
-	 Then I should see success message for <module> record
-		And I should see the newly added functional status record <Condition> and <Date> on grid
+	 Then I should see message of success for <module> record
+#		And I should see the newly added functional status record <Condition> and <Date> on grid
 		
 		Examples:
 		|    Patient   |                       Condition                       |  Date  |module|
@@ -36,7 +36,7 @@ Background:
 		And I enter <Condition> in functional status condition field
 		*   I enter <Date> in functional status date field
 		*   I click on functional status Update button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #		And I should see the newly added functional status record <Condition> and <Date> on grid
 		
 		Examples:
@@ -54,7 +54,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Functional Status tab
     *   I enter <Condition> to delete record in functional status 
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #	  And I should see the deleted functional status not present on grid
 		
 		

@@ -29,7 +29,7 @@ class Immunizationsteps {
 
 		WebUI.waitForElementClickable(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Immunization/Obj_ImmunizationsTab'),
 				GlobalVariable.timeout)
-
+		Thread.sleep(3000)
 		'Click on Immunization Button'
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Immunization/Obj_ImmunizationsTab'))
 	}
@@ -232,10 +232,10 @@ class Immunizationsteps {
 	@And("I should see added record (.*) and (.*) and (.*) and (.*) and (.*) and (.*) and (.*) for immunnizations on grid")
 	def added_data_should_be_visible_on_the_UI_for_immunization(String Source, String Vaccine, String Date, String Status, String Lot_Number, String Manufacture_Name, String Comment){
 		'Verify the Entered data'
-//		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Immunization/Obj_td_source'), Source)
+		//		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Immunization/Obj_td_source'), Source)
 
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Immunization/Obj_td_vaccine'), Vaccine)
-		
+
 		String dat= Stringtext.planetext(Date)
 
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Immunization/Obj_td_startdate'), dat)
@@ -256,11 +256,10 @@ class Immunizationsteps {
 
 		Thread.sleep(3000)
 
-	/*	WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Refresh button/Obj_refreshbutton'))
-
-		//		WebElement refresh=driver.findElement(By.xpath("//span[@class='k-icon k-i-refresh']"))
-		//		refresh.click()
-		Thread.sleep(9000)*/
+		/*	WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Refresh button/Obj_refreshbutton'))
+		 //		WebElement refresh=driver.findElement(By.xpath("//span[@class='k-icon k-i-refresh']"))
+		 //		refresh.click()
+		 Thread.sleep(9000)*/
 
 		WebUI.switchToFrame(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_frame'), 2)
 

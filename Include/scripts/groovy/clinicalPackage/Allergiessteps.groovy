@@ -344,14 +344,14 @@ class Allergiessteps {
 
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_td_source'), Source)
 
-                           //		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_td_Allergy'), Allergy)
+		//		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_td_Allergy'), Allergy)
 
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_td_reaction'), Reaction)
 
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_td_severity'), Severity)
 
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_td_status'), Status)
-		
+
 		String stdate = Stringtext.planetext(Start_Date)
 
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_td_startdate'), stdate)
@@ -369,7 +369,7 @@ class Allergiessteps {
 
 		Thread.sleep(3000)
 		/*WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Refresh button/Obj_refreshbutton'))
-		Thread.sleep(9000)*/
+		 Thread.sleep(9000)*/
 
 		WebUI.switchToFrame(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_frame'), 2)
 

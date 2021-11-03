@@ -9,7 +9,7 @@ Background:
    @Regression
    @Sanity
     Scenario Outline: Create new patient with all fields
-    
+   
 	 When I click on patient create button
 	  And I enter <MRN> in patient mrn field
 		*   I enter <First_Name> in patient first name field
@@ -44,8 +44,8 @@ Background:
 		*   I enter <Email> in patient email field
 		*   I enter <Comments> in patient comments field
     *   I click on patient save button
-    #*   I click on patient proceed button button
-#	 Then I should see success message for created patient
+    *   I click on patient proceed button button
+	 Then I should see success message for created patient
                       #**********************		And I should see the newly created patient on grid
     
     Examples:
@@ -71,29 +71,29 @@ Background:
                                        #***************		*   I enter <MRN> in patient record mrn field
 		*   I enter <Gender> in patient record gender field
 		*   I enter <Language> in patient record language field
-#		*   I enter <Sexual_Orientation> in patient record sexual orientation field
-#		*   I enter <Gender_Identity> in patient record gender identity field
-#		*   I enter <Detailed_Race> in patient record detailed race field
-#		*   I enter <Race> in patient record race field
-#		*   I enter <Detailed_Ethnicity> in patient record detailed ethnicity field
-#		*   I enter <Ethnicity> in patient record ethnicity field
-#		*   I enter <Marital_Status> in patient record marital status field
-#		*   I enter <Religion> in patient record religion field
-#		*   I enter <Attributed_Provider> in patient record attributed provider field
-#		*   I enter <Bith_Address> in patient record birth address field
-#		*   I enter <Bith_State> in patient record birth state field
-#		*   I enter <Bith_Country> in patient record birth country field
-#		*   I enter <Street_Address> in patient record street address field
-#		*   I enter <City_Address> in patient record city address field
-#		*   I enter <State_Address> in patient record state address field
-#		*   I enter <ZIP_Address> in patient record zip address field
-#		*   I enter <Country_Address> in patient record country address field
-#		*   I enter <Home_Phone> in patient record home phone field
-#		*   I enter <Work_Phone> in patient record work phone field
-#		*   I enter <Mobile_Phone> in patient record mobile phone field
-#		*   I enter <Preffered_Phone> in patient record preffered phone field
-#		*   I enter <Email> in patient record email field
-#		*   I enter <Comments> in patient record comments field
+		*   I enter <Sexual_Orientation> in patient record sexual orientation field
+		*   I enter <Gender_Identity> in patient record gender identity field
+		*   I enter <Detailed_Race> in patient record detailed race field
+		*   I enter <Race> in patient record race field
+		*   I enter <Detailed_Ethnicity> in patient record detailed ethnicity field
+		*   I enter <Ethnicity> in patient record ethnicity field
+		*   I enter <Marital_Status> in patient record marital status field
+		*   I enter <Religion> in patient record religion field
+		*   I enter <Attributed_Provider> in patient record attributed provider field
+		*   I enter <Bith_Address> in patient record birth address field
+		*   I enter <Bith_State> in patient record birth state field
+		*   I enter <Bith_Country> in patient record birth country field
+		*   I enter <Street_Address> in patient record street address field
+		*   I enter <City_Address> in patient record city address field
+		*   I enter <State_Address> in patient record state address field
+		*   I enter <ZIP_Address> in patient record zip address field
+		*   I enter <Country_Address> in patient record country address field
+		*   I enter <Home_Phone> in patient record home phone field
+		*   I enter <Work_Phone> in patient record work phone field
+		*   I enter <Mobile_Phone> in patient record mobile phone field
+		*   I enter <Preffered_Phone> in patient record preffered phone field
+		*   I enter <Email> in patient record email field
+		*   I enter <Comments> in patient record comments field
     *   I click on patient record Update button
 	 Then I should see success message for edit patient record
 		             #***************And I should see the newly edit patient record on grid
@@ -115,6 +115,21 @@ Background:
    Examples:
     |    Patient   |
     |Ahmad, Murtaza| 
+    
+   @DeletePatientPic
+   @Regression  
+   @Sanity
+    Scenario Outline: pic upload in demographics record of patient
+    
+  Given I search <Patient> using global search
+   When I deleted picture of patient in the picture fame
+   Then I click on refresh button
+   Then I Verify that picture deleted successfully
+   
+   Examples:
+    |    Patient   |
+    |Ahmad, Murtaza| 
+    
     
    @SetPreference
    @Regression  

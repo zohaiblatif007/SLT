@@ -26,9 +26,20 @@ class PatientDemographicssteps {
 
 	@When("I click on patient create button")
 	def button_to_add_patientrecord() {
-		e=1
+		
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/AddPatient/Obj_Patientcreatebutton'),GlobalVariable.timeout)
-		Thread.sleep(9000)
+		Thread.sleep(6000)
+		WebUI.refresh()
+		Thread.sleep(4000)
+		WebUI.mouseOver(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
+		Thread.sleep(1000)
+		WebUI.click(findTestObject('Object Repository/OR_LandingPage/OR_CMR/Obj_Patients'))
+		WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Logo'), 3)
+
+
+		WebUI.enableSmartWait()
+		Thread.sleep(18000)
+		e=1
 		'Click on Add button'
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/AddPatient/Obj_Patientcreatebutton'))
 		WebUI.waitForElementPresent(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/AddPatient/Obj_firstName'), GlobalVariable.timeout)
@@ -1372,6 +1383,24 @@ class PatientDemographicssteps {
 		WebUI.uploadFile(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/Obj_Upload_picbutton'), "C:\\Users\\muhammad.zohaib\\patientpic.PNG")
 
 	}
+	
+	@When("I deleted picture of patient in the picture fame")
+	def deletepicture() {
+        WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/Obj_Uploaded_picarea'),GlobalVariable.timeout)
+		Thread.sleep(1000)
+		WebUI.mouseOver(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/Obj_Uploaded_picarea'))
+		
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/Obj_DeletePicbutton'))
+		
+	}
+	
+	@When("I click on refresh button")
+	def refreshbutton() {
+		Thread.sleep(3000)
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Refresh button/Obj_refreshbutton'))
+	    Thread.sleep(3000)
+			}
+	
 
 	@And("I Verify that picture uploaded successfully")
 	def upoadveryfiypicture() {
@@ -1382,6 +1411,19 @@ class PatientDemographicssteps {
 		//
 		//	System.out.println(a)
 	}
+	
+	
+	@And("I Verify that picture deleted successfully")
+	def deleteveryfiypicture() {
+
+		WebUI.verifyElementNotPresent(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/Obj_Uploaded_picarea'),GlobalVariable.timeout)
+
+		//	String a=	WebUI.getAttribute(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_PatientdemographicRecord/Obj_Uploaded_picarea'), 'style')
+		//
+		//	System.out.println(a)
+	}
+	
+	
 
 	@And("I click on optoutsms checkbox to set patient preference")
 	def clickcheckbox() {

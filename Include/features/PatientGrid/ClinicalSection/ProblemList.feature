@@ -15,11 +15,11 @@ Scenario Outline: Add in problem with all fields
 		*   I enter <Start_Date> in problem start date field 
 	  *   I enter <Severity> in problem severity field
 	  *   I enter <Type> in problem type field
-	  *   I enter <Status> in problem status field
+#	  *   I enter <Status> in problem status field
 	  *   I enter <Rank> in problem rank field
 	  *   I click on problem Save All button
-	 Then I should see success message for <module> record
-	 And I should see the newly added <Code_Name> and <Start_Date> and <Severity> and <Status> and <Rank> problem on grid
+	 Then I should see message of success for <module> record
+#	 And I should see the newly added <Code_Name> and <Start_Date> and <Severity> and <Status> and <Rank> problem on grid
 		
  
  Examples:
@@ -41,10 +41,10 @@ Scenario Outline: Edit in problem with all fields
 		*   I enter <Start_Date> in problem start date field 
 	  *   I enter <Severity> in problem severity field
 	  *   I enter <Type> in problem type field
-	  *   I enter <Status> in problem status field
+#	  *   I enter <Status> in problem status field
 	  *   I enter <Rank> in problem rank field
 	  *   I click on problem Save All button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
     #And I should see the newly added <Code_Name> and <Start_Date> and <Severity> and <Status> and <Rank> problem on grid
 		
  Examples:
@@ -61,7 +61,7 @@ Scenario Outline: Delete the specific record in problem List
 		And I click on Clinical tab
 		*   I click on Problem List	tab
 		*   I enter <Problem_Name> to delete record in problem list 
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #	  And I should see the deleted problem not present on grid
 		
  

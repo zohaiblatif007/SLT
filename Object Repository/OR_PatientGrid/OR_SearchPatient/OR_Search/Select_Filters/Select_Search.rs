@@ -6,12 +6,12 @@
    <elementGuidId>95c01afd-c468-46ec-bd29-c09bf57f3667</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(@class, 'k-state-default fontstyle')]/parent::li</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>h2</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//ul[@id='patientsearch_listbox']//li)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

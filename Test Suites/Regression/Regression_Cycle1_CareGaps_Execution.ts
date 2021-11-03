@@ -42,30 +42,6 @@
       <testCaseId>Test Cases/CucumberRunnerClasses/CareGaps/TC_CreateTaskNoReccurence</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d3e0a2cd-04cd-41e0-ae81-4a2974a66f04</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/CareGaps/TC_CreateCareGapTaskDailyRecurrence</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>26ae060d-7b88-4f50-b930-7652bc0b8296</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/CareGaps/TC_CreateCareGapTaskMonthlyRecurrence</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2e59060d-667a-4b1f-9a54-afb20d774e60</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/CareGaps/TC_CreateCareGapTaskWeeklyRecurrence</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>fbaa0fe1-a1cd-4bf9-a103-43fcb622e383</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/CareGaps/TC_CreateCareGapTaskYearlyRecurrence</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>40559776-e755-4be8-9a83-fbeb532ac64b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

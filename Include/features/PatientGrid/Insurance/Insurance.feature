@@ -31,7 +31,7 @@ Background:
 	  *   I enter <EffectiveFromdate> in insurance effective from field
 	  *   I enter <EffectiveTodate> in insurance effective to field	 
     *   I click on save button to save insurance data
-	 Then I should see success message for created insurance record
+#	 Then I should see success message for created insurance record
 #		And I should see the newly created insurance record on grid
     
     Examples:
@@ -66,7 +66,7 @@ Background:
 	  *   I enter <EffectiveFromdate> in insurance effective from field
 	  *   I enter <EffectiveTodate> in insurance effective to field	 
     *   I click on save button to save insurance data
-	 Then I should see success message for created insurance record
+#	 Then I should see success message for created insurance record
 #		And I should see the newly created insurance record on grid
     
     Examples:
@@ -84,8 +84,8 @@ Background:
 	Given I search <Patient> using global search 
    When I click on Insurance tab to land on insurance section
 	  *   I delete insurance record with <Payer> of the insurance
-	 Then I should see success message for deleted insurance record
-		And I should see deleted insurance record not present on grid
+#	 Then I should see success message for deleted insurance record
+#		And I should see deleted insurance record not present on grid
     
     Examples:
     |    Patient     |Payer|

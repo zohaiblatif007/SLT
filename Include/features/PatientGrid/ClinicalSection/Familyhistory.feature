@@ -23,8 +23,8 @@ Background:
 		*   I enter <Deceased> in family history deceased field
 		*   I enter <Comments> in family history comments field
 	  *   I click on family history Update button
-	 Then I should see success message for <module> record
-		And I should see the newly added family history record <Source_Code>, <Code_Name>, <Relationship>, <Gender>, <Start_Date>, <End_Date>, <Negation>, <Deceased> and <Comments> on grid  
+	 Then I should see message of success for <module> record
+#		And I should see the newly added family history record <Source_Code>, <Code_Name>, <Relationship>, <Gender>, <Start_Date>, <End_Date>, <Negation>, <Deceased> and <Comments> on grid  
 		
 		Examples:
 		|   Patient    |Source_Code|          Code_Name            |Relationship|Gender|Start_Date|End_Date|Negation|Deceased|         Comments             |module|
@@ -50,7 +50,7 @@ Background:
 		*   I enter <Deceased> in family history deceased field
 		*   I enter <Comments> in family history comments field
 	  *   I click on family history Update button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #		And I should see the newly added family history record <Source_Code>, <Code_Name>, <Relationship>, <Gender>, <Start_Date>, <End_Date>, <Negation>, <Deceased> and <Comments> on grid  
 		
 		Examples:
@@ -67,7 +67,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Family History tab
 	  *   I enter <Source_Code> to delete record in family history 
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #	  And I should see the deleted family history not present on grid
 		
 		Examples:

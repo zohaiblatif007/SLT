@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "CD9DB222AA14D86AF9AF639F97CC4301",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_LeftFilter_LeftFiltersPatientGrid",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

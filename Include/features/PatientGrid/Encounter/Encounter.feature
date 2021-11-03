@@ -29,7 +29,7 @@ Background:
 		*   I enter <RefrenceProvider> in patient encounter reference provider field
     *   I click on patient save button to save encounter
 	 Then I should see success message for created encounter
-#		And I should see the newly created encounter on grid
+		And I should see the newly created encounter on grid
     
     Examples:
     |    Patient     |Source|Billable|                          Encounter                    |      StartDate     |       EndDate      |ServingFacility|Disposition| Disfacility |Location|      POS     | VisitType|   NoteType  |ApptProvider|RendringProvider|RefrenceProvider|   
@@ -62,7 +62,7 @@ Background:
 		*   I enter <RefrenceProvider> in patient encounter reference provider field
     *   I click on patient save button to save encounter
 	 Then I should see success message for edit encounter
-#		And I should see the newly created encounter on grid
+		And I should see the newly created encounter on grid
     
     Examples:
     |    Patient     |Source|Billable|                          Encounter                    |      StartDate     |       EndDate      |ServingFacility|Disposition| Disfacility |Location|      POS     | VisitType|   NoteType  |ApptProvider|RendringProvider|RefrenceProvider|   

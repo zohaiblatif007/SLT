@@ -15,22 +15,22 @@ Feature: Add All types of Assessments
       * I click on Recommended Assessment tab to add assessment
       * I should see Cancel, Save & Close and Save buttons available and functional
       * I should see the Questionaire is loaded against relevant assessment
-      * I should see question removing cross sign available and functional
+      #* I should see question removing cross sign available and functional
       * I enter <Title> in assessment title field
       * I enter <CPTCode> in assessment CPTCode field
       * I enter <Comment> in assessment comment field
       * I enter answer <Ans1> to question 1 in Assessment
-      * I enter answer <Ans2> to question 2 in Assessment
-      * I enter answer <Ans3> to question 3 in Assessment
-      * I enter answer <Ans4> to question 4 in Assessment
-      * I enter answer <Ans5> to question 5 in Assessment 
+      #* I enter answer <Ans2> to question 2 in Assessment
+      #* I enter answer <Ans3> to question 3 in Assessment
+      #* I enter answer <Ans4> to question 4 in Assessment
+      #* I enter answer <Ans5> to question 5 in Assessment 
       * I click on Save button to save assessment
    Then I should see success message for added assessment   
       * I click on Save and Close button to save assessment
    Then I should see success message for added assessment
     And I should see Edit button available and functional
     And I should see the newly added <Title> and <BillableType> and <CPTCode> for assessment on grid
-      * I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
+      #* I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
 
     Examples: 
       |      Patient      | Title | BillableType | CPTCode  |     Comment      |Ans1|     Ans2       |     Ans3       |Ans4|Ans5|
@@ -54,17 +54,17 @@ Feature: Add All types of Assessments
       * I enter <Title> in assessment title field
       * I enter <Comment> in assessment comment field
       * I enter answer <Ans1> to question 1 in Assessment
-      * I enter answer <Ans2> to question 2 in Assessment
-      * I enter answer <Ans3> to question 3 in Assessment
-      * I enter answer <Ans4> to question 4 in Assessment
-      * I enter answer <Ans5> to question 5 in Assessment 
+      #* I enter answer <Ans2> to question 2 in Assessment
+      #* I enter answer <Ans3> to question 3 in Assessment
+      #* I enter answer <Ans4> to question 4 in Assessment
+      #* I enter answer <Ans5> to question 5 in Assessment 
       * I click on Save button to save assessment
    Then I should see success message for added assessment   
       * I click on Save and Close button to save assessment
    Then I should see success message for added assessment
     And I should see Edit button available and functional
     And I should see the newly added <Title> and <BillableType> and <CPTCode> for assessment on grid
-      * I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
+      #* I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
 
     Examples: 
       |      Patient      |   Title    | BillableType | CPTCode  |     Comment      |Ans1|     Ans2       |      Ans3       |Ans4 |Ans5|
@@ -115,22 +115,22 @@ Feature: Add All types of Assessments
       * I click on Proceed button to save assessment template
       * I should see Cancel, Save & Close and Save buttons available and functional
       * I should see the Questionaire is loaded against relevant assessment
-      * I should see question removing cross sign available and functional
+      #* I should see question removing cross sign available and functional
       * I enter <Title> in assessment title field
       * I enter <CPTCode> in assessment CPTCode field
       * I enter <Comment> in assessment comment field
       * I enter answer <Ans1> to question 1
-      * I enter answer <Ans2> to question 2
-      * I enter answer <Ans3> to question 3
-      * I enter answer <Ans4> to question 4
-      * I enter answer <Ans5> to question 5 
+      #* I enter answer <Ans2> to question 2
+      #* I enter answer <Ans3> to question 3
+      #* I enter answer <Ans4> to question 4
+      #* I enter answer <Ans5> to question 5 
       * I click on Save button to save assessment
    Then I should see success message for added assessment   
       * I click on Save and Close button to save assessment
    Then I should see success message for added assessment
     And I should see Edit button available and functional
     And I should see the newly added <Title> and <BillableType> and <CPTCode> for assessment on grid
-      * I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
+      #* I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
 
     Examples: 
       | Patient      | B_Assessment |    Title          |CPTCode|     Comment     | Ans1 |Ans2|Ans3|Ans4|Ans5| BillableType|
@@ -150,22 +150,22 @@ Feature: Add All types of Assessments
       * I click on Proceed button to save assessment template
       * I should see Cancel, Save & Close and Save buttons available and functional
       * I should see the Questionaire is loaded against relevant assessment
-      * I should see question removing cross sign available and functional
+      #* I should see question removing cross sign available and functional
       * I enter type of assessment as non billable
       * I enter <Title> in assessment title field
       * I enter <Comment> in assessment comment field
       * I enter answer <Ans1> to question 1
-      * I enter answer <Ans2> to question 2
-      * I enter answer <Ans3> to question 3
-      * I enter answer <Ans4> to question 4
-      * I enter answer <Ans5> to question 5 
+      #* I enter answer <Ans2> to question 2
+      #* I enter answer <Ans3> to question 3
+      #* I enter answer <Ans4> to question 4
+      #* I enter answer <Ans5> to question 5 
       * I click on Save button to save assessment
    Then I should see success message for added assessment   
       * I click on Save and Close button to save assessment
    Then I should see success message for added assessment
     And I should see Edit button available and functional
     And I should see the newly added <Title> and <BillableType> and <CPTCode> for assessment on grid
-      * I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
+      #* I should see <Title> and current system Date and No of Q Ans and <Ans1> and <Ans2> and <Ans3> and <Ans4> and <Ans5> and <Comment> for assessment in the right pan
 
     Examples: 
       | Patient      | B_Assessment|             Title            |CPTCode|     Comment     | Ans1 |Ans2|Ans3|Ans4|Ans5| BillableType|

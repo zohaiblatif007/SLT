@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "B1B0690138F4E7FB05A612C06CA5966B",
+  "keywordFileContentHash": "5E2C9F0A86877A424851F85DF5B08AD1",
   "keywordClasses": [
     {
       "name": "runnerPackage.Runner_SMSFuncionality_VrifysendandResendafterEditMessage",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

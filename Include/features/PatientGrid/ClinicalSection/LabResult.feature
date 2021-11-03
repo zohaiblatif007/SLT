@@ -21,11 +21,11 @@ Background:
 	  *   I enter <Value> in lab results value field
 	  *   I enter <Flag> in lab results flag field
 	  *   I enter <Normal_Range> in lab results normal range field
-	  *   I enter <Status> in lab results status field
+#	  *   I enter <Status> in lab results status field
 	  *   I enter <Notes> in lab results notes field
 	  *   I click on lab results Save All button
-	 Then I should see success message for <module> record
-		And I should see the newly added <panelvalidate> and <Test1> and <Test2> and <Test3> and <Test4> and <Result_Type> and <Value> and <flagvaldate> and <Normal_Range> and <statusvalidate> lab results on grid
+	 Then I should see message of success for <module> record
+#		And I should see the newly added <panelvalidate> and <Test1> and <Test2> and <Test3> and <Test4> and <Result_Type> and <Value> and <flagvaldate> and <Normal_Range> and <statusvalidate> lab results on grid
 	
    Examples:    
    |    Patient    |   Panel   |               Analyte         |   Date |   Time |Result_Type|            Value             |     Flag     |Normal_Range |Status |       Notes     |panelvalidate|                 Test1                         |                                          Test2                                   |       Test3        |                                Test4                           |    flagvaldate    |statusvalidate|module|   
@@ -46,10 +46,10 @@ Background:
 	  *   I enter <Value> in lab results value field
 	  *   I enter <Flag> in lab results flag field
 	  *   I enter <Normal_Range> in lab results normal range field
-	  *   I enter <Status> in lab results status field
+#	  *   I enter <Status> in lab results status field
 	  *   I enter <Notes> in lab results notes field
 	  *   I click on lab results Save All button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 		
    Examples:    
    |    Patient    |             Analyte         |   Date |   Time |Result_Type|                            Value                              |  Flag  |Normal_Range |  Status |      Notes     |panelvalidate|                   Test1                                    |                    Test2                                   |                            Test3                           |                                Test4                           |    flagvaldate    |statusvalidate|module| 
@@ -65,8 +65,8 @@ Background:
 		And I click on Clinical tab
  		*   I click on Lab Results	tab
 		*   I enter <Panel> to delete panel in lab results
-	 Then I should see success message: <dynamicid> for following <message>
-#	  And I should see the deleted lab results not present on grid
+	 Then I should see message of success: <dynamicid> for following <message>
+	  And I should see the deleted lab results not present on grid
 	
    Examples:    
      |    Patient    |   Panel   |dynamicid|message|   

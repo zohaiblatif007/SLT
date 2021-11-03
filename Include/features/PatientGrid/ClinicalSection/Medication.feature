@@ -25,8 +25,8 @@ Scenario Outline: Add in medication with all fields
 	  *   I enter <Drug_Formulacy> in medication drug formulacy status field
 	  *   I enter <Directions> in medication directions field
 	  *   I click on medication Save All button
-	 Then I should see success message: <dynamicid> for following <message>
-		And I should see the newly added <Source_Type> and <Name> and <Frequency> and <Route> and <Start_Date> and <CPOE> and <eSent> and <Drug_Formulacy> and <Directions> medication on grid
+	 Then I should see message of success: <dynamicid> for following <message>
+#		And I should see the newly added <Source_Type> and <Name> and <Frequency> and <Route> and <Start_Date> and <CPOE> and <eSent> and <Drug_Formulacy> and <Directions> medication on grid
 		
 
  Examples:
@@ -54,7 +54,7 @@ Scenario Outline: Edit in medication with all fields
 	  *   I enter <Drug_Formulacy> in medication drug formulacy status field
 	  *   I enter <Directions> in medication directions field
 	  *   I click on medication Save All button
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #		And I should see the newly added <Source_Type> and <Name> and <Frequency> and <Route> and <Start_Date> and <CPOE> and <eSent> and <Drug_Formulacy> and <Directions> medication on grid
 		
 		
@@ -74,7 +74,7 @@ Scenario Outline: Delete the specific record in medication
 		And I click on Clinical tab
  		*   I click on Medication	tab
 		*   I enter <Source_Type> to delete record in medication 
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #	  And I should see the deleted medication not present on grid
 		
 

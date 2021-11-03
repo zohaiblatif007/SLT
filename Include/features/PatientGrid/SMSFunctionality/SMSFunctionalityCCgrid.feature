@@ -47,7 +47,7 @@ Feature: Verify SMS notification is working fine
      * I set status <Status> for appointment
      * I enter <Comment> in text area of appointment    
   When I click the save button to save Appointments
-  Then I should see success message for <module> record
+  Then I should see message of success for <module> record
      * I verify that appointment created successfully with <Reason> and <Status> and <Comment> and with telehealth type 
      * I should see Edit appointment, Show log and Delete buttons are available and functional
 

@@ -23,8 +23,8 @@ Background:
 	  *   I enter <Specimen_No> in lab order specimen no. field
 	  *   I enter <Notes> in lab order notes field
 	  *   I click on lab order Save All button
-	 Then I should see success message: <dynamicid> for following <message>
-		And I should see the newly added <Laboratary> and <Panel> lab order on grid
+	 Then I should see message of success: <dynamicid> for following <message>
+#		And I should see the newly added <Laboratary> and <Panel> lab order on grid
 		
     Examples:    
    |    Patient    |    Laboratary   |      Date      |   Panel   |STAT|Diagnosis|Collection_Date |Type |Specimen_No|      Notes    |dynamicid|message|
@@ -52,7 +52,7 @@ Background:
 	  *   I enter <Specimen_No> in lab order specimen no. field
 	  *   I enter <Notes> in lab order notes field
 	  *   I click on lab order Save All button
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #		And I should see the newly added <Laboratary> and <Panel> lab order on grid
 	
     Examples:    
@@ -70,7 +70,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Lab Orders	tab
 		*   I enter <Laboratary> to delete record in lab order
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #	  And I should see the deleted lab order not present on grid
 	
     Examples:    

@@ -22,7 +22,7 @@ Background:
 	  *   I enter <Mobilephone> in support persons mobile phone field
     *   I click on update button to save support persons data
 	 Then I should see success message for created support persons record
-#		And I should see the newly created support persons record on grid
+		And I should see the newly created support persons record on grid
     
     Examples:
     |    Patient     |Lastname|Firstname| Relatiosip|Startdate|Enddate | Homephone | Mobilephone|  
@@ -47,7 +47,7 @@ Background:
 	  *   I enter <Mobilephone> in support persons mobile phone field
     *   I click on update button to save support persons data
 	 Then I should see success message for created support persons record
-#		And I should see the newly created support persons record on grid
+		And I should see the newly created support persons record on grid
     
     Examples:
     |    Patient     |Lastname|Firstname| Relatiosip|Startdate|Enddate | Homephone | Mobilephone|  
@@ -64,7 +64,7 @@ Background:
     And I click on support persons button
 	  *   I delete support person record with <Lastname> of a patient
 	 Then I should see success message for deleted support person record
-#		And I should see deleted support person record not present on grid
+		And I should see deleted support person record not present on grid
     
     Examples:
     |    Patient     |Lastname|
@@ -90,7 +90,7 @@ Background:
 	  *   I enter <Mobilephone> in guardian mobile phone field
     *   I click on update button to save guardian data
 	 Then I should see success message for created guardian record
-#		And I should see the newly created guardian record on grid
+		And I should see the newly created guardian record on grid
     
     Examples:
     |    Patient     |Lastname|Firstname| Relatiosip|Startdate|Enddate | Homephone | Mobilephone|  
@@ -115,7 +115,7 @@ Background:
 	  *   I enter <Mobilephone> in guardian mobile phone field
     *   I click on update button to save guardian data
 	 Then I should see success message for created guardian record
-#		And I should see the newly created guardian record on grid
+		And I should see the newly created guardian record on grid
     
     Examples:
     |    Patient     |Lastname|Firstname| Relatiosip|Startdate|Enddate | Homephone | Mobilephone|  
@@ -132,7 +132,7 @@ Background:
     And I click on guardian button
 	  *   I delete guardian record with <Lastname> of a patient
 	 Then I should see success message for deleted guardian record
-#		And I should see deleted guardian record not present on grid
+		And I should see deleted guardian record not present on grid
     
     Examples:
     |    Patient     |Lastname|

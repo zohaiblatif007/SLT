@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22472913000,
+              "duration": 32265375400,
               "status": "passed"
             },
             "line": 5,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 7324470400,
+              "duration": 11655911299,
               "status": "passed"
             },
             "match": {
@@ -35,68 +35,174 @@
             }
           }
         ],
-        "line": 16,
-        "name": "Add Recommended Billable Assessment with all fields",
+        "line": 40,
+        "name": "Applying Multi Facility Filters",
         "description": "",
-        "id": "add-all-types-of-assessments;add-recommended-billable-assessment-with-all-fields;;2",
+        "id": "left-filters;applying-multi-facility-filters;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 22204185500,
+              "duration": 4996391500,
               "status": "passed"
             },
-            "line": 11,
-            "name": "I search Danial722, Hack722 using global search",
+            "line": 28,
+            "name": "I am on patient grid left filters",
             "match": {
-              "arguments": [
-                {
-                  "val": "Danial722, Hack722",
-                  "offset": 9
-                }
-              ],
-              "location": "SD_SearchPatient.search_Patient(String)"
+              "location": "SD_LeftFilters.verifyonleftfilter()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1004942400,
+              "duration": 11383710501,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I verify patient is selected",
+            "line": 29,
+            "name": "I click on reset button",
             "match": {
-              "location": "SD_SearchPatient.search_Patientverification()"
+              "location": "SD_LeftFilters.click_On_Reset_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3455454700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should see left filter options are reset to default",
+            "match": {
+              "location": "SD_LeftFilters.verifyonleftfilterreset()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6924485400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter facility MHPN for left filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MHPN",
+                  "offset": 17
+                }
+              ],
+              "location": "SD_LeftFilters.user_Enter_Facility(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6975932700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter facility MHPN2 for left filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MHPN2",
+                  "offset": 17
+                }
+              ],
+              "location": "SD_LeftFilters.user_Enter_Facility(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1060612799,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on apply button",
+            "match": {
+              "location": "SD_LeftFilters.click_On_Apply_Button()"
             },
             "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3937717699,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should see MHPN as Facility1 in left filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MHPN",
+                  "offset": 13
+                }
+              ],
+              "location": "SD_LeftFilters.Facility2_and_Program_filters_should_be_updated(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 455905800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I should see MHPN2 as Facility2 in left filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MHPN2",
+                  "offset": 13
+                }
+              ],
+              "location": "SD_LeftFilters.Facility1_and_Program_filters_should_be_updated(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4531864200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I should see multi facility of filtered patients is MHPN and MHPN2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MHPN",
+                  "offset": 52
+                },
+                {
+                  "val": "MHPN2",
+                  "offset": 61
+                }
+              ],
+              "location": "SD_LeftFilters.Facilitymultiple_patientgrid(String,String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@PatientSearch"
+            "name": "@LeftFilters"
           },
           {
-            "name": "@Patientsearch"
-          },
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@Sanity"
+            "name": "@UMP_MultiFacility"
           }
         ]
       }
     ],
-    "name": "Add All types of Assessments",
+    "name": "Left Filters",
     "description": "",
-    "id": "add-all-types-of-assessments",
+    "id": "left-filters",
     "keyword": "Feature",
-    "uri": "Include/features/PatientGrid/PatientSearch.feature",
+    "uri": "Include/features/PatientGrid/LeftFilters.feature",
     "tags": [
       {
-        "name": "@PatientSearch",
+        "name": "@LeftFilters",
         "type": "Tag",
         "location": {
           "line": 1,

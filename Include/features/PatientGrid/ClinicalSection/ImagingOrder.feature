@@ -24,8 +24,8 @@ Background:
     *   I enter <Body_Site> in imaging order body site field
     *   I enter <Comments> in imaging order comments field
     *   I click on imaging order Update button
-	 Then I should see success message: <dynamicid> for following <message>
-		And I should see the newly added imaging order record <Imaging_Center> and <Date> on grid
+	 Then I should see message of success: <dynamicid> for following <message>
+#		And I should see the newly added imaging order record <Imaging_Center> and <Date> on grid
     
     Examples:
     |    Patient   |       Imaging_Center      |Order_Provider|      Date    |Bill_Type|Imaging_Test_Type|            Imaging_Test           |Effective_Date|                      Diagnoses                     |             Body_Site            |   Comments      |dynamicid|message|
@@ -52,7 +52,7 @@ Background:
     *   I enter <Body_Site> in imaging order body site field
     *   I enter <Comments> in imaging order comments field
     *   I click on imaging order Update button
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #		And I should see the newly added imaging order record <Imaging_Center> and <Date> on grid
     
     Examples:
@@ -69,7 +69,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Imaging Order	tab
  	  *   I enter <Imaging_Center> to delete record in imaging order 
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #	  And I should see the deleted imaging order not present on grid
 		
     

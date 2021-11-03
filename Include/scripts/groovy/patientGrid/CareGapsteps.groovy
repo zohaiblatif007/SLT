@@ -151,7 +151,7 @@ class CareGapsteps {
 
 	@When("I enter (.*) in care gap task status field")
 	def statustask(String status) {
-        Thread.sleep(2000)
+		Thread.sleep(2000)
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_CareGap/OR_Task/Obj_statusdropdown'))
 		WebUI.switchToFrame(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_CareGap/Obj_frame'), GlobalVariable.timeout)

@@ -307,8 +307,8 @@ class Imagingresultsteps {
 
 	@And("I should see the newly added imaging results record (.*) and (.*) and (.*) and (.*) and (.*) present on grid")
 	public void addeddata_visible_for_imagingresult(String Imaging_Test_Type, String Date, String Order_Provider, String Status, String File){
-		
-System.out.println(Imaging_Test_Type)
+
+		System.out.println(Imaging_Test_Type)
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/td_Source'), Imaging_Test_Type)
 
 		String dat= Stringtext.planetext(Date)
@@ -321,10 +321,10 @@ System.out.println(Imaging_Test_Type)
 		'Verify that Alert Comes After Save Button Clicked'
 		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/td_status'),Status)
 
-//		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/Obj_tdAtachedfilefafa'))
+		//		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/Obj_tdAtachedfilefafa'))
 
 		'Verify that Alert Comes After Save Button Clicked'
-//		WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/Obj_td_TestFile'), 2)
+		//		WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ImagingResults/Obj_td_TestFile'), 2)
 	}
 
 
@@ -335,10 +335,9 @@ System.out.println(Imaging_Test_Type)
 		Thread.sleep(3000)
 
 		/*WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Refresh button/Obj_refreshbutton'))
-
-		//		WebElement refresh=driver.findElement(By.xpath("//span[@class='k-icon k-i-refresh']"))
-		//		refresh.click()
-		Thread.sleep(9000)*/
+		 //		WebElement refresh=driver.findElement(By.xpath("//span[@class='k-icon k-i-refresh']"))
+		 //		refresh.click()
+		 Thread.sleep(9000)*/
 
 		WebUI.switchToFrame(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_frame'), 2)
 

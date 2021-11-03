@@ -37,6 +37,9 @@ public class UtilityFunctions {
 		WebUI.switchToDefaultContent()
 	}
 
+	
+	
+	
 
 	void setValues(TestObject object,String value) {
 		'wait for element to appear'
@@ -46,6 +49,10 @@ public class UtilityFunctions {
 		WebUI.setText(object,value)
 	}
 
+	
+	
+	
+	
 	void pressTab(TestObject object) {
 		WebUI.sendKeys(object,Keys.chord(Keys.TAB))
 	}

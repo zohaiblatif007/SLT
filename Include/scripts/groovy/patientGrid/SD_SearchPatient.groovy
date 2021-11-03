@@ -1,6 +1,8 @@
 package patientGrid
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.Keys
+
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -18,24 +20,25 @@ class SD_SearchPatient {
 	@When("I search (.*) using global search")
 	public void search_Patient(String Patient) {
 
-		//		WebUI.click(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/OR_Input_Search_Field/Obj_inputSearch'))
-
-
-		Thread.sleep(10000)
 		WebUI.click(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/OR_Input_Search_Field/Obj_inputSearch'))
-		Thread.sleep(1000)
-		
+
+
+
+		WebUI.waitForElementClickable(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/OR_Input_Search_Field/Obj_inputSearch'), 20)
+
+		WebUI.click(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/OR_Input_Search_Field/Obj_inputSearch'))
+
 		WebUI.setText(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/OR_Input_Search_Field/Obj_inputSearch'), Patient)
 
-		Thread.sleep(5000)
-        
-		
-		
-		WebUI.click(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/Select_Filters/Select_Search'))
-		
-		
-		
 		Thread.sleep(4000)
+
+//		WebUI.sendKeys(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/OR_Input_Search_Field/Obj_inputSearch'), Keys.chord(Keys.ENTER))
+
+
+				WebUI.waitForElementClickable(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/Select_Filters/Select_Search'), 10)
+		
+				WebUI.click(findTestObject('OR_PatientGrid/OR_SearchPatient/OR_Search/Select_Filters/Select_Search'))
+		Thread.sleep(14000)
 	}
 	
 	
@@ -74,14 +77,18 @@ class SD_SearchPatient {
 		Thread.sleep(4000)
 	}
 	
+	
+	
+	
+	
 
 	@Given("I click on (.*) to open patient")
 	public void open_patient(String Patient) {
 		String xpath='//td[@role="gridcell"]//*[text()="'+Patient+'"]'
 		
-		Thread.sleep(2000)
+		Thread.sleep(6000)
 		obj.customClick(frame, xpath)	
-		Thread.sleep(2000)
+		Thread.sleep(4000)
 		
 	}
 	

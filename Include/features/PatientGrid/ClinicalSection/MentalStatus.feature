@@ -17,8 +17,8 @@ Background:
 		And I enter <Condition> in mental status condition field
 		*   I enter <Date> in mental status date field
 		*   I click on mental status Update button
-	 Then I should see success message for <module> record
-		And I should see the newly added <Condition> and <Date> of mental status on grid
+	 Then I should see message of success for <module> record
+#		And I should see the newly added <Condition> and <Date> of mental status on grid
 		
 		Examples:
 		|    Patient       |                       Condition                       |  Date  |module|
@@ -37,7 +37,7 @@ Background:
 		And I enter <Condition> in mental status condition field
 		*   I enter <Date> in mental status date field
 		*   I click on mental status Update button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #		And I should see the newly added <Condition> and <Date> of mental status on grid
 		
 		Examples:
@@ -55,7 +55,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Mental Status tab
 		*   I enter <Condition> to delete record in mental status 
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #	  And I should see the deleted mental status not present on grid
 		
 		Examples:

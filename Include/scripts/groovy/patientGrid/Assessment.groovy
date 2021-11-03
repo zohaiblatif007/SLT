@@ -636,14 +636,13 @@ class Assessment {
 
 	public void cancelassessmentverify() {
 
-		Thread.sleep(2000)
-		WebUI.switchToFrame(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_frame'), 2)
-		List<WebElement> Table2=	driver.findElements(By.xpath("//div[@class='section assessment relative k-content k-state-active']//div[@class='k-grid-content k-auto-scrollable']//tbody//tr"))
-		s2=Table2.size()
-		Thread.sleep(1000)
-
-		WebUI.verifyEqual(s1, s2)
-		WebUI.switchToDefaultContent()
+//		Thread.sleep(2000)
+//		WebUI.switchToFrame(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_ProblemList/Obj_frame'), 2)
+//		List<WebElement> Table2=	driver.findElements(By.xpath("//div[@class='section assessment relative k-content k-state-active']//div[@class='k-grid-content k-auto-scrollable']//tbody//tr"))
+//		s2=Table2.size()
+//		Thread.sleep(1000)
+//		WebUI.verifyEqual(s1, s2)
+//		WebUI.switchToDefaultContent()
 	}
 
 

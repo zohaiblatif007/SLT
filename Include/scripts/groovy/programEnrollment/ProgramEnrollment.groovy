@@ -146,8 +146,9 @@ class ProgramEnrollment  {
 	@Then("I click on expanding button on the enrollment history tab")
 	void click_expanding_arrow()
 	{
-		WebUI.waitForElementClickable(findTestObject('Object Repository/ProgramEnrollment/expandArrow'),10)
-		WebUI.scrollToElement(findTestObject('Object Repository/ProgramEnrollment/expandArrow'),3)
+		WebUI.waitForElementClickable(findTestObject('Object Repository/ProgramEnrollment/expandArrow'),30)
+	
+			WebUI.scrollToElement(findTestObject('Object Repository/ProgramEnrollment/expandArrow'),3)
 		WebUI.click(findTestObject('Object Repository/ProgramEnrollment/expandArrow'))
 		Thread.sleep(3000);
 	}
@@ -210,9 +211,24 @@ class ProgramEnrollment  {
 		WebUI.scrollToElement(findTestObject('Object Repository/ProgramEnrollment/obj_verifyenrolment'), 4)
 		WebUI.mouseOver(findTestObject('Object Repository/ProgramEnrollment/obj_verifyenrolment'))
 	
-		String completestring= ''+status +' '+'('+Name+')'+''
-		String xpaths = '//div[text()="' +completestring+ '"]'
-		obj.customVerify(frame, xpaths, completestring);
+//		String completestring= ''+status +' '+'('+Name+')'+''
+//		String xpaths = '//div[text()="' +completestring+ '"]'
+		
+		WebUI.switchToFrame(frame, 4)
+//		String completestring= ''+status +' '+'('+Name+')'+''
+		String completestring= ''+status +' '+'('+Name+''
+		String xpath1 = '//div[contains(text(),"' +completestring+ '")]'
+		
+		TestObject to = new TestObject("objectName")
+		to.addProperty("xpath",ConditionType.EQUALS,xpath1)
+		
+		WebUI.verifyElementPresent(to, 3)
+		WebUI.switchToDefaultContent()
+		
+		
+		
+		
+//		obj.customVerify(frame, xpaths, completestring);
 		
 	}
 	

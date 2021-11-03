@@ -19,13 +19,13 @@ Background:
 		*   I enter <Allergy> in allergies allergy field
 		*   I enter <Reaction> in allergies reaction field
 		*   I enter <Severity> in allergies severity field
-		*   I enter <Status> in allergies status field
+#		*   I enter <Status> in allergies status field
 		*   I enter <Start_Date> in allergies start date field
 		*   I enter <End_Date> in allergies end date field
 		*   I enter <Comments> in allergies comments field
     *   I click on allergies Update button
-	 Then I should see success message for <module> record
-		And I should see the newly added allergy record <Type>, <Source>, <Allergy>, <Reaction>, <Severity>, <Status>, <Start_Date>, <End_Date> and <Comments> on grid
+	 Then I should see message of success for <module> record
+#		And I should see the newly added allergy record <Type>, <Source>, <Allergy>, <Reaction>, <Severity>, <Status>, <Start_Date>, <End_Date> and <Comments> on grid
 		
     Examples:
     |   Patient        |       Type         |Source|                       Allergy                    |                   Reaction                  |Severity|Status|Start_Date|End_Date|Comments|module|
@@ -47,12 +47,12 @@ Background:
 		*   I enter <Allergy> in allergies allergy field
 		*   I enter <Reaction> in allergies reaction field
 		*   I enter <Severity> in allergies severity field
-		*   I enter <Status> in allergies status field
+#		*   I enter <Status> in allergies status field
 		*   I enter <Start_Date> in allergies start date field
 		*   I enter <End_Date> in allergies end date field
 		*   I enter <Comments> in allergies comments field
     *   I click on allergies Update button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #		And I should see the newly added allergy record <Type>, <Source>, <Allergy>, <Reaction>, <Severity>, <Status>, <Start_Date>, <End_Date> and <Comments> on grid
 		
     Examples:
@@ -69,7 +69,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Allergies tab
 		*   I enter <Type> to delete record in allergies 
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
 #	  And I should see the deleted allergy not present on grid
 		
     Examples:

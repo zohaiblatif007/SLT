@@ -12,6 +12,30 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>78aed07a-8d95-432e-b273-08fc3e6c6c70</testSuiteGuid>
    <testCaseLink>
+      <guid>22e7d575-9ff8-4827-8bce-4701b8b9c5dd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddProblem</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>472747e2-2539-4fe5-95b9-b5696cc1cb99</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddImmunization</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>33333a4b-038b-4b59-812a-545bbd283098</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddAllergies</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9872d7c2-6739-4420-9914-8138c8e49413</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddFamilyHistory</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>fa175e5a-8ccd-46c5-8171-1f79da2a0aa0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -46,30 +70,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddLabOrder</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>472747e2-2539-4fe5-95b9-b5696cc1cb99</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddImmunization</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>33333a4b-038b-4b59-812a-545bbd283098</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddAllergies</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>22e7d575-9ff8-4827-8bce-4701b8b9c5dd</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddProblem</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9872d7c2-6739-4420-9914-8138c8e49413</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CucumberRunnerClasses/ClinicalSection/TC_AddFamilyHistory</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>358dd450-1486-409b-b6e3-76bf0765c519</guid>

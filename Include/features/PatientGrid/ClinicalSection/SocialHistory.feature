@@ -19,7 +19,7 @@ Background:
     *   I enter <Start_Date> in social history start date field
     *   I enter <End_Date> in social history end date field
     *   I click on social history Update button
-	 Then I should see success message for <module> record
+#	 Then I should see message of success for <module> record
 #		And I should see the newly added <Type> and <Observation> and <Start_Date> and <End_Date> social history on grid
    
    Examples:
@@ -41,8 +41,8 @@ Background:
     *   I enter <Start_Date> in social history start date field
     *   I enter <End_Date> in social history end date field
     *   I click on social history Update button
-	  Then I should see success message for <module> record
-		 And I should see the newly added <Type> and <Observation> and <Start_Date> and <End_Date> social history on grid
+#	  Then I should see message of success for <module> record
+#		 And I should see the newly added <Type> and <Observation> and <Start_Date> and <End_Date> social history on grid
    
    
    Examples:
@@ -59,7 +59,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Social History tab
 		*   I enter <Type> to delete record in social history 
-	 Then I should see success message for <module> record
+#	 Then I should see message of success for <module> record
 #	  And I should see the deleted social history not present on grid
    
    Examples:

@@ -223,7 +223,7 @@ class ProblemListsteps {
 	}
 
 
-	@Then("I should see success message for (.*) record")
+	@Then("I should see message of success for (.*) record")
 	def saved_alerts_shoud_be_popup(String module) {
 		if(module=='adding')
 			obj.verifyNotificationMessage(DataFactory.clinical_xpath_add,DataFactory.clinical_add_notification)
@@ -234,12 +234,26 @@ class ProblemListsteps {
 
 	}
 
-	@Then("I should see success message: (.*) for following (.*)")
+	@Then("I should see message of success: (.*) for following (.*)")
 	void saved_alerts_shoud_be_popup(String dynamicid,String message)
 	{
 		obj.verifyNotificationMessage(dynamicid,message)
 	}
 
+	
+	
+	@Then("I should see success message for added allergies")
+	def record_saved_successfully_alert_should_popup_for_allergies() {
+
+		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_Alertsaved'))
+
+		'Verify that Alert Comes After Save Button Clicked'
+		WebUI.verifyElementText(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_Alertsaved'),'successRecord saved successfully.Hide')
+
+		'Wait until Alert Disapear'
+		WebUI.waitForElementNotPresent(findTestObject('OR_PatientGrid/OR_PatientData/OR_Clinical Section/OR_Alergies/Obj_Alertsaved'),
+				GlobalVariable.timeout)
+	}
 
 	@Then("I should see success message for edit problem")
 	def updted_alerts_shoud_be_popup() {

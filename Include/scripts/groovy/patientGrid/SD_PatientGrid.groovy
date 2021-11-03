@@ -21,7 +21,7 @@ public class SD_PatientGrid {
 	public void I_navigate_to_patient_grid() {
 
 		WebUI.waitForElementClickable(findTestObject('OR_HomePage/Obj_Enterprise'), 10)
-		Thread.sleep(5000)
+		Thread.sleep(6000)
 		WebUI.click(findTestObject('OR_HomePage/Obj_Enterprise'))
 		Thread.sleep(1000)
 		if(GlobalVariable.Enterprise=='MHPN') {
@@ -74,7 +74,12 @@ public class SD_PatientGrid {
 
 
 		WebUI.enableSmartWait()
-		Thread.sleep(5000)
+		Thread.sleep(14000)
 
 	}
-}
+
+	
+	
+	
+	
+	}

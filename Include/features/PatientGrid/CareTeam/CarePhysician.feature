@@ -1,4 +1,4 @@
-#Author: Aliya Rauf
+#Author: Zohaib
 @CareTeam
 Feature: Assign and unassign Care Team
 
@@ -7,7 +7,7 @@ Feature: Assign and unassign Care Team
 
 
 
-   @AddCarePhysician @Regression @Sanity @Smoke
+   @AddCarePhysicianSDatelesstoCDateEDateGreaterToCDate @Regression @Sanity @Smoke
   Scenario Outline: Assign Care Physician to a patient while Start Date is less then current Date and end Date is greater then current Date
     Given I search <Patient> using global search
     And I click on Care Team	tab
@@ -16,7 +16,7 @@ Feature: Assign and unassign Care Team
 		*   I enter in  start date field while Start Date is less then current Date
 	  *   I enter in  end date field while end Date is greater then current Date
 	  *   I click on tick button to save record
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 	  And I should see the newly added <Name> and <Role> and Start Date and End Date as a Care Team record on grid
 	     Then I click on Name coloumn dropdown
       * I click on filter option for name
@@ -36,7 +36,7 @@ Feature: Assign and unassign Care Team
 
 
     
-   @EditCarePhysician @Regression @Sanity
+   @EditCarePhysicianSDateGreatertoCDateEDateGreaterToCDate  @Regression @Sanity
   Scenario Outline: Update Care Physician while Start Date is greater then current Date and end Date is greater then current Date
     Given I search <Patient> using global search
     And I click on Care Team	tab
@@ -44,7 +44,7 @@ Feature: Assign and unassign Care Team
 		And  I enter in  end date field while start Date is greater then current Date
 	  *   I enter in  end date field while end Date is greater then current Date
 	  *   I click on tick button to save record
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 	  And I should see the newly added <Name> and <Role> and Start Date and End Date as a Care Team record on grid
 	   Then I click on Name coloumn dropdown
       * I click on filter option for name
@@ -64,7 +64,7 @@ Feature: Assign and unassign Care Team
 
 
 
-    @EditCarePhysician @Regression @Sanity
+    @EditCarePhysicianSDateLesstoCDateEDateLessToCDate @Regression @Sanity
   Scenario Outline: Update Care Physician while Start Date is less then current Date and end Date is less then current Date
     Given I search <Patient> using global search
     And I click on Care Team	tab
@@ -72,7 +72,7 @@ Feature: Assign and unassign Care Team
 		And I enter in  start date field while Start Date is less then current Date
 	  *   I enter in  end date field while end Date is less then current Date
 	  *   I click on tick button to save record
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 	  And I should see the newly added <Name> and <Role> and Start Date and End Date as a Care Team record on grid
 	 	   Then I click on Name coloumn dropdown
       * I click on filter option for name
@@ -91,7 +91,7 @@ Feature: Assign and unassign Care Team
 
 
 
-    @EditCarePhysician @Regression @Sanity
+    @EditCarePhysicianSDateLesstoCDateEDateEqualToCDate  @Regression @Sanity
   Scenario Outline: Update Care Physician while Start Date is less then current Date and end Date is equal to  current Date
     Given I search <Patient> using global search
     And I click on Care Team	tab
@@ -99,7 +99,7 @@ Feature: Assign and unassign Care Team
 		And I enter in  start date field while Start Date is less then current Date
 	  *   I enter in  end date field while end Date is equal to current Date
 	  *   I click on tick button to save record
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 	  And I should see the newly added <Name> and <Role> and Start Date and End Date as a Care Team record on grid
 	 Then I click on Name coloumn dropdown
       * I click on filter option for name
@@ -123,7 +123,7 @@ Feature: Assign and unassign Care Team
     Given I search <Patient> using global search
     And I click on Care Team	tab
     When I click on Care Delete button of <Name>
-    Then I should see success message for <module> record
+    Then I should message of success for <module> record
     Then I click on Name coloumn dropdown
       * I click on filter option for name
       * I click on dropdown to set <Filter>
@@ -138,6 +138,6 @@ Feature: Assign and unassign Care Team
     Examples: 
     |    Patient       |   Name       |  Role        |member         |  module|    Filter    |
     |Danial722, Hack722|Doctor, Mohsin|Care Physician| Doctor, Mohsin|deleting|  Contains    |
-    
-
+    #
+#
    

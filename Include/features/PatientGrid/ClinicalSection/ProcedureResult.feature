@@ -17,12 +17,12 @@ Background:
     *   I enter <Procedure> in procedure results procedure field
     *   I enter <Date> in procedure results date field
     *   I enter <Target_Site> in procedure results target site field
-    *   I enter <Status> in procedure results status field
+    #*   I enter <Status> in procedure results status field
     *   I enter <Reason> in procedure results reason field
     *   I enter <Service_Delivery_Location> in procedure results service delivery location field
     *   I click on procedure result Update button
-	 Then I should see success message for <module> record
-		And I should see the newly added <Source> and <Procedure> and <Date> and <Target_Site> and <Status> and <Reason> and <Service_Delivery_Location> procedure result on grid
+	 Then I should see message of success for <module> record
+#		And I should see the newly added <Source> and <Procedure> and <Date> and <Target_Site> and <Status> and <Reason> and <Service_Delivery_Location> procedure result on grid
     
     Examples:
     |   Patient    |Source|            Procedure              |  Date  |                 Target_Site                   |  Status |                          Reason                           |Service_Delivery_Location|module|
@@ -41,11 +41,11 @@ Background:
     *   I enter <Procedure> in procedure results procedure field
     *   I enter <Date> in procedure results date field
     *   I enter <Target_Site> in procedure results target site field
-    *   I enter <Status> in procedure results status field
+    #*   I enter <Status> in procedure results status field
     *   I enter <Reason> in procedure results reason field
     *   I enter <Service_Delivery_Location> in procedure results service delivery location field
     *   I click on procedure result Update button
-	  Then I should see success message for <module> record
+#	  Then I should see message of success for <module> record
 #		 And I should see the newly added <Source> and <Procedure> and <Date> and <Target_Site> and <Status> and <Reason> and <Service_Delivery_Location> procedure result on grid
     
     
@@ -62,7 +62,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Procedure Results	tab
 	 	*   I enter <Order_Provider> to delete record in procedure results
-	 Then I should see success message for <module> record
+#	 Then I should see message of success for <module> record
 #	  And I should see the deleted procedure result not present on grid
 		
     

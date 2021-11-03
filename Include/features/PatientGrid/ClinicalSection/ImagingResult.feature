@@ -17,13 +17,13 @@ Background:
      *   I enter <Imagng_Test> in imaging results imaging test field
      *   I enter <Date> in imaging result date field
      *   I enter <Order_Provider> in imaging results order provider field
-     *   I enter <Status> in imaging results status field
+     #*   I enter <Status> in imaging results status field
      #*******   I enter <File> in imaging results file field
      *   I enter <Results> in imaging results results field
      *   I enter <Interpretation> in imaging results interpretation field
      *   I click on imaging results Save button
-	  Then I should see success message: <dynamicid> for following <message>
-		 And I should see the newly added imaging results record <Imaging_Test_Type> and <Date> and <Order_Provider> and <Status> and <File> present on grid
+	  Then I should see message of success: <dynamicid> for following <message>
+#		 And I should see the newly added imaging results record <Imaging_Test_Type> and <Date> and <Order_Provider> and <Status> and <File> present on grid
      
      Examples:
      |    Patient   | Imaging_Test_Type |            Imagng_Test            |     Date     |Order_Provider|Status|                       File                  |Results|Interpretation|dynamicid|message|
@@ -42,12 +42,12 @@ Background:
      *   I enter <Imaging_Test> in imaging results imaging test field
      *   I enter <Date> in imaging result date field
      *   I enter <Order_Provider> in imaging results order provider field
-     *   I enter <Status> in imaging results status field
+     #*   I enter <Status> in imaging results status field
      *   I enter <File> in imaging results file field
      *   I enter <Results> in imaging results results field
      *   I enter <Interpretation> in imaging results interpretation field
      *   I click on imaging results Save button
-	  Then I should see success message: <dynamicid> for following <message>
+	  Then I should see message of success: <dynamicid> for following <message>
 #		 And I should see the newly added imaging results record <Imaging_Test_Type> and <Date> and <Order_Provider> and <Status> and <File> present on grid
      
      Examples:
@@ -65,7 +65,7 @@ Background:
 		 And I click on Clinical tab
  		 *   I click on Imaging Results	tab
 	   *   I enter <Imaging_Test_Type> to delete record in imaging result 
-	 Then I should see success message: <dynamicid> for following <message>
+	 Then I should see message of success: <dynamicid> for following <message>
 #	  And I should see the deleted imaging result not present on grid
 		
      Examples:

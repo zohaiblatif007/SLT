@@ -26,8 +26,8 @@ Background:
 		*   I enter <O2_Sats> in vital sign o2 sats field
 		*   I enter <InhaledO2_Concern> in vital sign inhaled o2 concern field
 	  *   I click on vital signs Save All button
-	 Then I should see success message for <module> record
-		And I should see the newly added <Time> and <Temp> and <Pulse> and <Resp_Rate> and <Sys_Bloodpressure> and <Dia_Bloodpressure> and <Weight> and <Height> and <BMI> and <BSA> and <O2_Sats> and <InhaledO2_Concern> vital signs on grid
+	 Then I should see message of success for <module> record
+#		And I should see the newly added <Time> and <Temp> and <Pulse> and <Resp_Rate> and <Sys_Bloodpressure> and <Dia_Bloodpressure> and <Weight> and <Height> and <BMI> and <BSA> and <O2_Sats> and <InhaledO2_Concern> vital signs on grid
 		    
     Examples:
     |      Patient     |  Date  |  Time |Temp|Pulse|Resp_Rate|Sys_Bloodpressure |Dia_Bloodpressure |Weight| Height|BMI|BSA|O2_Sats|InhaledO2_Concern|module|
@@ -55,7 +55,7 @@ Background:
 		*   I enter <O2_Sats> in vital sign o2 sats field
 		*   I enter <InhaledO2_Concern> in vital sign inhaled o2 concern field
 	  *   I click on vital signs Save All button
-	 Then I should see success message for <module> record
+	 Then I should see message of success for <module> record
     #And I should see the newly added <Time> and <Temp> and <Pulse> and <Resp_Rate> and <Sys_Bloodpressure> and <Dia_Bloodpressure> and <Weight> and <Height> and <BMI> and <BSA> and <O2_Sats> and <InhaledO2_Concern> vital signs on grid
 		    
 		    
@@ -74,7 +74,7 @@ Background:
 		And I click on Clinical tab
  		*   I click on Vital Sign	tab
 		*   I enter <Temp> to delete record in vital signs 
-	 Then I should see success message for <module> record
+#	 Then I should see message of success for <module> record
 #	  And I should see the deleted vital signs not present on grid
 		    
     Examples:

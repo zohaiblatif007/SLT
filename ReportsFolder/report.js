@@ -1,37 +1,59 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Include/features/PatientGrid/PatientSearch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Include/features/PatientGrid/LeftFilters.feature");
 formatter.feature({
-  "name": "Add All types of Assessments",
+  "name": "Left Filters",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@PatientSearch"
+      "name": "@LeftFilters"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Add Recommended Billable Assessment with all fields",
+  "name": "Applying Multi Facility Filters",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Patientsearch"
-    },
-    {
-      "name": "@Regression"
-    },
-    {
-      "name": "@Sanity"
+      "name": "@UMP_MultiFacility"
     }
   ]
 });
 formatter.step({
-  "name": "I search \u003cPatient\u003e using global search",
+  "name": "I am on patient grid left filters",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "I verify patient is selected",
+  "name": "I click on reset button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I should see left filter options are reset to default",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "I enter facility \u003cFacility1\u003e for left filter",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "I enter facility \u003cFacility2\u003e for left filter",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "I click on apply button",
   "keyword": "* "
+});
+formatter.step({
+  "name": "I should see \u003cFacility1\u003e as Facility1 in left filter",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "I should see \u003cFacility2\u003e as Facility2 in left filter",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "I should see multi facility of filtered patients is \u003cFacility1\u003e and \u003cFacility2\u003e",
+  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -40,12 +62,14 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Patient"
+        "Facility1",
+        "Facility2"
       ]
     },
     {
       "cells": [
-        "Danial722, Hack722"
+        "MHPN",
+        "MHPN2"
       ]
     }
   ]
@@ -69,40 +93,104 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Add Recommended Billable Assessment with all fields",
+  "name": "Applying Multi Facility Filters",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@PatientSearch"
+      "name": "@LeftFilters"
     },
     {
-      "name": "@Patientsearch"
-    },
-    {
-      "name": "@Regression"
-    },
-    {
-      "name": "@Sanity"
+      "name": "@UMP_MultiFacility"
     }
   ]
 });
 formatter.step({
-  "name": "I search Danial722, Hack722 using global search",
+  "name": "I am on patient grid left filters",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "SD_SearchPatient.search_Patient(String)"
+  "location": "SD_LeftFilters.verifyonleftfilter()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I verify patient is selected",
+  "name": "I click on reset button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SD_LeftFilters.click_On_Reset_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see left filter options are reset to default",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SD_LeftFilters.verifyonleftfilterreset()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter facility MHPN for left filter",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SD_LeftFilters.user_Enter_Facility(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I enter facility MHPN2 for left filter",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SD_LeftFilters.user_Enter_Facility(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on apply button",
   "keyword": "* "
 });
 formatter.match({
-  "location": "SD_SearchPatient.search_Patientverification()"
+  "location": "SD_LeftFilters.click_On_Apply_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see MHPN as Facility1 in left filter",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SD_LeftFilters.Facility2_and_Program_filters_should_be_updated(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see MHPN2 as Facility2 in left filter",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SD_LeftFilters.Facility1_and_Program_filters_should_be_updated(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see multi facility of filtered patients is MHPN and MHPN2",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SD_LeftFilters.Facilitymultiple_patientgrid(String,String)"
 });
 formatter.result({
   "status": "passed"
